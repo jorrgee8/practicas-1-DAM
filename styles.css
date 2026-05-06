@@ -1,5 +1,29 @@
-.formulario {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: black;
+    padding: 10px;
+}
+
+header, footer {
+    background: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+main, form {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
 }
