@@ -1,29 +1,56 @@
-body {
+body { 
     font-family: Arial, sans-serif;
     background: white;
     color: black;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-header, footer {
+header,footer {
     background: blue;
     color: white;
-    text-align: center;
     padding: 10px;
     border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 main, form {
-    background: white;
     padding: 15px;
-    border-radius: 8px;
     margin-bottom: 15px;
 }
 
 input, textarea {
     width: 100%;
     border: 1px solid black;
-    margin: 5px;
-    padding: 5px;
+    margin: 5px 0;
+    padding: 8px;
     border-radius: 5px;
+}
+
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+article {
+    background-color: antiquewhite; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
 }
