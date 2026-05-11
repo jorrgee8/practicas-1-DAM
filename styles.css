@@ -20,12 +20,15 @@ header,footer {
 nav {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 nav a {
     color: white;
     font-weight: bold;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 main, form {
@@ -46,6 +49,7 @@ input, textarea {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    text-align: center;
 }
 
 article {
@@ -53,4 +57,29 @@ article {
     padding: 20px;
     border-radius: 10px;
     width: 220px;
+}
+
+#modo {
+    cursor: pointer;
+    border: none;
+}
+
+body.modo-oscuro {
+    background: #121212;
+    color: white;
+}
+
+body.modo-oscuro header {
+    background: darkblue;
+    color: white;
+}
+
+body.modo-oscuro .proyectos{
+    background-color: 121212;
+    color: wheat;
+}
+
+body.modo-oscuro article {
+    color: white;
+    background-color: burlywood;
 }
