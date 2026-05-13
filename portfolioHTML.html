@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
     <script defer src="script.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1>PORTAFOLIO JORGE</h1>
         <nav>
+            <button id="agregar-estudio">Agregar Estudio</button>
             <button id="modo">Modo</button>
             <a href="#">Inicio</a>
             <a href="#">Redes</a>
@@ -18,20 +21,43 @@
         </nav>
     </header>
 
-
-
-    <main>    
+    
+    <main>
         <h3>DESCRIPCION</h3>
         <p>Soy Jorge, estudiante de Grado Superior de Desarrollo de Aplicaciones Multiplataforma</p>
         <h3>Redes</h3>
-        <a href="https://github.com/jorrgee8">Github</a>
+        <ul>
+            <li>Github:</li>      
+            <a href="https://github.com/jorrgee8" target="_blank">github.com/jorrgee8</a> <br>
+            <li>Linkedin:</li>
+            <a href="#">Aun no esta disponible</a>
+        </ul>
+
+
+
+        <h2>Habilidades</h2>
+            <h3>Habilidades Técnicas</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>MySQL</li>
+                <li>Git y GitHub</li>
+            </ul>
 
         <h3>Habilidades Laborales</h3>
-        <ul>
-            <li>Trabajo en equipo</li>
-            <li>Trabajador</li>
-            <li>Constante</li> <br>
-        </ul>
+            <ul>
+                <li>Trabajo en equipo</li>
+                <li>Trabajador</li>
+                <li>Constante</li> <br>
+            </ul>
+
+
+        <h3>Estudios</h3>
+            <ul id="estudios">
+
+            </ul>
     </main>
 
     <section class="proyectos">
@@ -51,23 +77,53 @@
             <p>Este es el proyecto 3</p>
         </article>
     </section>
-    
 
 
-    
+
+
     <form action="#" method="post">
         <h3>FORMULARIO</h3>
-        <label for="email">email</label>
-        <input type="email" name="email" id="email"> <br><br>
+        <form action="#" method="post">
 
-        <label for="contraseña">Contraseña</label>
-        <input type="password" name="contraseña" id="contraseña"> <br><br>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required> <br><br>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required> <br><br>
+            
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje"></textarea> <br><br>
 
-        <input type="button" value="Enviar">
-    </form>
+            <input type="submit" value="Enviar">
+        </form>
 
-    <footer>
-        @2026 Portafolio de Jorge
-    </footer>
+
+        <div id="modal">
+            <div id="modal-contenido">
+                <form action="#" method="post" id="formulario-estudio"
+
+
+
+                <h3>Añadir Estudio</h3>
+                <input type="text" name="titulo" id="titulo" placeholder="Introduce el titulo">
+                <input type="text" name="info" id="info" placeholder="Introduce la informacion">
+                
+                <button id="agregar">Agregar</button>
+                <span id="cerrar-modal">&times;</span>
+
+                <p id="estudio-agregado"></p>
+
+                </form>
+            </div>
+                
+        </div>
+    
+
+    
+
+        <footer>
+            @2026 Portafolio de Jorge
+        </footer>
 </body>
+
 </html>

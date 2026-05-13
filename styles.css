@@ -1,3 +1,22 @@
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .proyectos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
 body { 
     font-family: Arial, sans-serif;
     background: white;
@@ -10,11 +29,27 @@ body {
 header,footer {
     background: blue;
     color: white;
-    padding: 10px;
+    padding: 14px;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+main p {
+    background: white;
+    padding: 12px;
+    border-left: 4px solid cyan;
+    border-radius: 5px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+ul, li {
+    background: #f9f9f9;
+    border-radius: 8px;
 }
 
 nav {
@@ -29,12 +64,9 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
+    font-size: 14px;
 }
 
-main, form {
-    padding: 15px;
-    margin-bottom: 15px;
-}
 
 input, textarea {
     width: 100%;
@@ -59,9 +91,11 @@ article {
     width: 220px;
 }
 
-#modo {
+#modo, #agregar-estudio {
     cursor: pointer;
     border: none;
+    background: cadetblue;
+    border-radius: 6px;
 }
 
 body.modo-oscuro {
@@ -69,8 +103,19 @@ body.modo-oscuro {
     color: white;
 }
 
-body.modo-oscuro header {
+body.modo-oscuro header,footer {
     background: darkblue;
+    color: white;
+}
+
+body.modo-oscuro main p {
+    background: #121212;
+    color: white;
+}
+
+body.modo-oscuro ul,
+body.modo-oscuro li {
+    background: #121212;
     color: white;
 }
 
@@ -82,4 +127,33 @@ body.modo-oscuro .proyectos{
 body.modo-oscuro article {
     color: white;
     background-color: burlywood;
+}
+
+#modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+}
+
+#modal-contenido {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    font-size: 30px;
+    position: relative;
+
+}
+
+#cerrar-modal {
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
