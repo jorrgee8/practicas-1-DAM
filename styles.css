@@ -48,8 +48,14 @@ main a {
 }
 
 ul, li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background: #f9f9f9;
     border-radius: 8px;
+    width:200px;
+    background-color: antiquewhite;
+    padding: 3px;
 }
 
 nav {
