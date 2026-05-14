@@ -17,6 +17,10 @@
 
 }
 
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 body { 
     font-family: Arial, sans-serif;
     background: white;
@@ -48,8 +52,14 @@ main a {
 }
 
 ul, li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background: #f9f9f9;
     border-radius: 8px;
+    width:200px;
+    background-color: antiquewhite;
+    padding: 3px;
 }
 
 nav {
@@ -58,7 +68,7 @@ nav {
     align-items: center;
 }
 
-nav a {
+.enlaces {
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -96,6 +106,15 @@ article {
     border: none;
     background: cadetblue;
     border-radius: 6px;
+}
+
+#repos {
+    cursor: pointer;
+    text-decoration: none;
+    background: cadetblue;
+    border-radius: 6px;
+    color: black;
+    font-size: 14px;
 }
 
 body.modo-oscuro {

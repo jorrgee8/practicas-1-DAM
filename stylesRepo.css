@@ -1,0 +1,49 @@
+body {
+    align-items: center;
+}
+
+header,footer {
+    background: blue;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+#contenedor-repos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px;
+}
+
+.repo{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: beige;
+
+}
+
+#contenedor-repos a {
+    color: black;
+}

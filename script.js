@@ -60,3 +60,12 @@ agregarEstudio.addEventListener('click', (e) => {
         document.getElementById("formulario-estudio").reset()
 
 })
+
+
+
+
+    
+
+
+
+
